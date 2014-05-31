@@ -51,6 +51,28 @@ NSString *const kVBTableViewCellIdentifier = @"VBTableViewCell";
 }
 
 #pragma mark - Table view data source
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    static VBTableViewCell *cell = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        cell = [tableView dequeueReusableCellWithIdentifier:kVBTableViewCellIdentifier];
+    });
+    
+    NSString *line = [[self lines] objectAtIndex:[indexPath row]];
+    
+    [[cell joyceLabel] setText:line];
+    
+    [cell layoutIfNeeded];
+    
+    CGSize size = [[cell contentView] systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+    
+    return size.height + 1.0f;
+    
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     
@@ -59,7 +81,6 @@ NSString *const kVBTableViewCellIdentifier = @"VBTableViewCell";
     return numberOfRowsInSection;
     
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
