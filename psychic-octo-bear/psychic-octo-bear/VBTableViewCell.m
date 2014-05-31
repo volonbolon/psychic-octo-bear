@@ -7,28 +7,86 @@
 //
 
 #import "VBTableViewCell.h"
+#import "NSLayoutConstraint+SelfInstall.h"
+
+@interface VBTableViewCell ()
+@property (getter = areConstraintsSet) BOOL constraintsSet;
+@end
 
 @implementation VBTableViewCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        // Initialization code
+    
+    if ( nil != self) {
+        
+        _constraintsSet = NO;
+    
+        UIView *contentView = [self contentView];
+        
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
+        [label setTranslatesAutoresizingMaskIntoConstraints:NO];
+        [label setBackgroundColor:[UIColor lightGrayColor]];
+        
+        [contentView addSubview:label];
+        
+        _label = label;
+        
     }
+    
     return self;
 }
 
-- (void)awakeFromNib
+- (void)updateConstraints
 {
-    // Initialization code
+    
+    if ( ![self areConstraintsSet] ) {
+        
+        UILabel *label = [self label];
+        UIView *contentView = [self contentView];
+        
+        NSLayoutConstraint *ltpc = [NSLayoutConstraint constraintWithItem:label
+                                                               attribute:NSLayoutAttributeTop
+                                                               relatedBy:NSLayoutRelationEqual
+                                                                  toItem:contentView
+                                                               attribute:NSLayoutAttributeTop
+                                                              multiplier:1.0
+                                                                constant:11.0];
+        [ltpc vb_install:UILayoutPriorityRequired];
+        
+        NSLayoutConstraint *ltrc = [NSLayoutConstraint constraintWithItem:contentView
+                                                               attribute:NSLayoutAttributeTrailing
+                                                               relatedBy:NSLayoutRelationEqual
+                                                                  toItem:label
+                                                               attribute:NSLayoutAttributeTrailing
+                                                              multiplier:1.0
+                                                                constant:20.0];
+        [ltrc vb_install:UILayoutPriorityRequired];
+        
+        NSLayoutConstraint *llc = [NSLayoutConstraint constraintWithItem:label
+                                                                attribute:NSLayoutAttributeLeading
+                                                                relatedBy:NSLayoutRelationEqual
+                                                                   toItem:contentView
+                                                                attribute:NSLayoutAttributeLeading
+                                                               multiplier:1.0
+                                                                 constant:20.0];
+        [llc vb_install:UILayoutPriorityRequired];
+        
+        NSLayoutConstraint *lbc = [NSLayoutConstraint constraintWithItem:label
+                                                               attribute:NSLayoutAttributeBottom
+                                                               relatedBy:NSLayoutRelationEqual
+                                                                  toItem:contentView
+                                                               attribute:NSLayoutAttributeBottom
+                                                              multiplier:1.0
+                                                                constant:20.0];
+        [lbc vb_install:UILayoutPriorityDefaultHigh];
+        
+    }
+    
+    [super updateConstraints];
+    
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
 
 @end

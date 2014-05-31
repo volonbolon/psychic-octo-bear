@@ -1,5 +1,5 @@
 //
-//  VBTableViewCell.h
+//  NSLayoutConstraint+SelfInstall.h
 //  psychic-octo-bear
 //
 //  Created by Ariel Rodriguez on 5/31/14.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VBTableViewCell : UITableViewCell
-@property (weak) UILabel *label;
+@interface NSLayoutConstraint (SelfInstall)
+- (BOOL)vb_install;
+- (BOOL)vb_install:(float)priority;
+- (void)vb_remove;
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B00C9830193A9B9C009DBCCE /* NSLayoutConstraint+SelfInstall.m in Sources */ = {isa = PBXBuildFile; fileRef = B00C982F193A9B9C009DBCCE /* NSLayoutConstraint+SelfInstall.m */; };
+		B00C9833193A9BDA009DBCCE /* UIView+VBHierarchySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = B00C9832193A9BDA009DBCCE /* UIView+VBHierarchySupport.m */; };
 		B0D2D768193A91F90050EBBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D2D767193A91F90050EBBA /* Foundation.framework */; };
 		B0D2D76A193A91F90050EBBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D2D769193A91F90050EBBA /* CoreGraphics.framework */; };
 		B0D2D76C193A91F90050EBBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D2D76B193A91F90050EBBA /* UIKit.framework */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B00C982E193A9B9C009DBCCE /* NSLayoutConstraint+SelfInstall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+SelfInstall.h"; sourceTree = "<group>"; };
+		B00C982F193A9B9C009DBCCE /* NSLayoutConstraint+SelfInstall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+SelfInstall.m"; sourceTree = "<group>"; };
+		B00C9831193A9BD9009DBCCE /* UIView+VBHierarchySupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VBHierarchySupport.h"; sourceTree = "<group>"; };
+		B00C9832193A9BDA009DBCCE /* UIView+VBHierarchySupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VBHierarchySupport.m"; sourceTree = "<group>"; };
 		B0D2D764193A91F90050EBBA /* psychic-octo-bear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "psychic-octo-bear.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D2D767193A91F90050EBBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B0D2D769193A91F90050EBBA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -124,6 +130,10 @@
 				B0D2D798193A93360050EBBA /* VBTableViewController.m */,
 				B0D2D7A1193A999A0050EBBA /* VBTableViewCell.h */,
 				B0D2D7A2193A999A0050EBBA /* VBTableViewCell.m */,
+				B00C982E193A9B9C009DBCCE /* NSLayoutConstraint+SelfInstall.h */,
+				B00C982F193A9B9C009DBCCE /* NSLayoutConstraint+SelfInstall.m */,
+				B00C9831193A9BD9009DBCCE /* UIView+VBHierarchySupport.h */,
+				B00C9832193A9BDA009DBCCE /* UIView+VBHierarchySupport.m */,
 			);
 			path = "psychic-octo-bear";
 			sourceTree = "<group>";
@@ -254,6 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B00C9833193A9BDA009DBCCE /* UIView+VBHierarchySupport.m in Sources */,
+				B00C9830193A9B9C009DBCCE /* NSLayoutConstraint+SelfInstall.m in Sources */,
 				B0D2D778193A91F90050EBBA /* VBAppDelegate.m in Sources */,
 				B0D2D774193A91F90050EBBA /* main.m in Sources */,
 				B0D2D799193A93360050EBBA /* VBTableViewController.m in Sources */,
