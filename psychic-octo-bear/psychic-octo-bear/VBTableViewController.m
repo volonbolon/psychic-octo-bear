@@ -13,6 +13,7 @@ NSString *const kVBTableViewCellIdentifier = @"VBTableViewCell";
 
 @interface VBTableViewController ()
 @property (strong) NSArray *lines;
+@property (strong) NSMutableDictionary *cache;
 @end
 
 @implementation VBTableViewController
@@ -61,15 +62,39 @@ NSString *const kVBTableViewCellIdentifier = @"VBTableViewCell";
         cell = [tableView dequeueReusableCellWithIdentifier:kVBTableViewCellIdentifier];
     });
     
-    NSString *line = [[self lines] objectAtIndex:[indexPath row]];
+    CGFloat height = CGFLOAT_MAX;
+    NSNumber *cachedHeight = [[self cache] objectForKey:indexPath];
     
-    [[cell joyceLabel] setText:line];
+    if ( nil == cachedHeight ) {
+        
+        NSString *line = [[self lines] objectAtIndex:[indexPath row]];
+        
+        [[cell joyceLabel] setText:line];
+        
+        [cell layoutIfNeeded];
+        
+        CGSize size = [[cell contentView] systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+        
+        height = size.height;
+        
+        [[self cache] setObject:[NSNumber numberWithFloat:height]
+                         forKey:indexPath];
+        
+    } else {
+        
+        height = [cachedHeight floatValue];
+        
+    }
+
     
-    [cell layoutIfNeeded];
+    return height + 1.0f;
     
-    CGSize size = [[cell contentView] systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     
-    return size.height + 1.0f;
+    return UITableViewAutomaticDimension;
     
 }
 
