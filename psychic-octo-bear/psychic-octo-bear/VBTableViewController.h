@@ -1,5 +1,5 @@
 //
-//  VBViewController.h
+//  VBTableViewController.h
 //  psychic-octo-bear
 //
 //  Created by Ariel Rodriguez on 5/31/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VBViewController : UIViewController
+@interface VBTableViewController : UITableViewController
 
 @end
