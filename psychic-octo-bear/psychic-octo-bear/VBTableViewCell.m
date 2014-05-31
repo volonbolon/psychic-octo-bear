@@ -64,12 +64,23 @@
                                                                 constant:11.0];
         [lbc vb_install:UILayoutPriorityRequired];
         
-        [label setPreferredMaxLayoutWidth:280.0f];
-        
     }
     
     return self;
 }
 
+- (void)layoutSubviews
+{
+    
+    [super layoutSubviews];
+    
+    CGFloat contentViewWidth = [[self contentView] frame].size.width;
+    
+    [[self label] setPreferredMaxLayoutWidth:contentViewWidth-40.0f];
+    
+    [super layoutSubviews];
+    
+    
+}
 
 @end
