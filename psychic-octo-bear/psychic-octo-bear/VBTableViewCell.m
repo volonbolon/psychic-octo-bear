@@ -33,60 +33,49 @@
         
         _label = label;
         
+        NSLayoutConstraint *ltpc = [NSLayoutConstraint constraintWithItem:label
+                                                                attribute:NSLayoutAttributeTop
+                                                                relatedBy:NSLayoutRelationEqual
+                                                                   toItem:contentView
+                                                                attribute:NSLayoutAttributeTop
+                                                               multiplier:1.0
+                                                                 constant:11.0];
+        [ltpc vb_install:UILayoutPriorityRequired];
+        
+        NSLayoutConstraint *ltrc = [NSLayoutConstraint constraintWithItem:contentView
+                                                                attribute:NSLayoutAttributeTrailing
+                                                                relatedBy:NSLayoutRelationEqual
+                                                                   toItem:label
+                                                                attribute:NSLayoutAttributeTrailing
+                                                               multiplier:1.0
+                                                                 constant:20.0];
+        [ltrc vb_install:UILayoutPriorityRequired];
+        
+        NSLayoutConstraint *llc = [NSLayoutConstraint constraintWithItem:label
+                                                               attribute:NSLayoutAttributeLeading
+                                                               relatedBy:NSLayoutRelationEqual
+                                                                  toItem:contentView
+                                                               attribute:NSLayoutAttributeLeading
+                                                              multiplier:1.0
+                                                                constant:20.0];
+        [llc vb_install:UILayoutPriorityRequired];
+        
+        NSLayoutConstraint *lbc = [NSLayoutConstraint constraintWithItem:contentView
+                                                               attribute:NSLayoutAttributeBottom
+                                                               relatedBy:NSLayoutRelationEqual
+                                                                  toItem:label
+                                                               attribute:NSLayoutAttributeBottom
+                                                              multiplier:1.0
+                                                                constant:11.0];
+        [lbc vb_install:UILayoutPriorityDefaultHigh];
+        
+        [self setConstraintsSet:YES];
+        
     }
     
     return self;
 }
 
-- (void)updateConstraints
-{
-    
-    if ( ![self areConstraintsSet] ) {
-        
-        UILabel *label = [self label];
-        UIView *contentView = [self contentView];
-        
-        NSLayoutConstraint *ltpc = [NSLayoutConstraint constraintWithItem:label
-                                                               attribute:NSLayoutAttributeTop
-                                                               relatedBy:NSLayoutRelationEqual
-                                                                  toItem:contentView
-                                                               attribute:NSLayoutAttributeTop
-                                                              multiplier:1.0
-                                                                constant:11.0];
-        [ltpc vb_install:UILayoutPriorityRequired];
-        
-        NSLayoutConstraint *ltrc = [NSLayoutConstraint constraintWithItem:contentView
-                                                               attribute:NSLayoutAttributeTrailing
-                                                               relatedBy:NSLayoutRelationEqual
-                                                                  toItem:label
-                                                               attribute:NSLayoutAttributeTrailing
-                                                              multiplier:1.0
-                                                                constant:20.0];
-        [ltrc vb_install:UILayoutPriorityRequired];
-        
-        NSLayoutConstraint *llc = [NSLayoutConstraint constraintWithItem:label
-                                                                attribute:NSLayoutAttributeLeading
-                                                                relatedBy:NSLayoutRelationEqual
-                                                                   toItem:contentView
-                                                                attribute:NSLayoutAttributeLeading
-                                                               multiplier:1.0
-                                                                 constant:20.0];
-        [llc vb_install:UILayoutPriorityRequired];
-        
-        NSLayoutConstraint *lbc = [NSLayoutConstraint constraintWithItem:label
-                                                               attribute:NSLayoutAttributeBottom
-                                                               relatedBy:NSLayoutRelationEqual
-                                                                  toItem:contentView
-                                                               attribute:NSLayoutAttributeBottom
-                                                              multiplier:1.0
-                                                                constant:20.0];
-        [lbc vb_install:UILayoutPriorityDefaultHigh];
-        
-    }
-    
-    [super updateConstraints];
-    
-}
 
 
 @end

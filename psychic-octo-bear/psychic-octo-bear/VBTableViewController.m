@@ -7,6 +7,9 @@
 //
 
 #import "VBTableViewController.h"
+#import "VBTableViewCell.h"
+
+NSString *const kVBTableViewCellIdentifier = @"VBTableViewCell";
 
 @interface VBTableViewController ()
 @property (strong) NSArray *lines;
@@ -34,11 +37,9 @@
 {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    [[self tableView] registerClass:[VBTableViewCell class]
+             forCellReuseIdentifier:kVBTableViewCellIdentifier];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,30 +50,24 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    
+    return [[self lines] count];
+
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kVBTableViewCellIdentifier
+                                                            forIndexPath:indexPath];
     
-    // Configure the cell...
+    NSString *line = [[self lines] objectAtIndex:[indexPath row]];
+    
+    [[(VBTableViewCell *)cell label] setText:line];
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
