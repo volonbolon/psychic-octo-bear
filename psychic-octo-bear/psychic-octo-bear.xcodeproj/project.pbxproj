@@ -19,6 +19,7 @@
 		B0D2D783193A91FA0050EBBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D2D76B193A91F90050EBBA /* UIKit.framework */; };
 		B0D2D78B193A91FA0050EBBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0D2D789193A91FA0050EBBA /* InfoPlist.strings */; };
 		B0D2D78D193A91FA0050EBBA /* psychic_octo_bearTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2D78C193A91FA0050EBBA /* psychic_octo_bearTests.m */; };
+		B0D2D799193A93360050EBBA /* VBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2D798193A93360050EBBA /* VBTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		B0D2D788193A91FA0050EBBA /* psychic-octo-bearTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "psychic-octo-bearTests-Info.plist"; sourceTree = "<group>"; };
 		B0D2D78A193A91FA0050EBBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B0D2D78C193A91FA0050EBBA /* psychic_octo_bearTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = psychic_octo_bearTests.m; sourceTree = "<group>"; };
+		B0D2D797193A93360050EBBA /* VBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTableViewController.h; sourceTree = "<group>"; };
+		B0D2D798193A93360050EBBA /* VBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				B0D2D777193A91F90050EBBA /* VBAppDelegate.m */,
 				B0D2D779193A91F90050EBBA /* Images.xcassets */,
 				B0D2D76E193A91F90050EBBA /* Supporting Files */,
+				B0D2D797193A93360050EBBA /* VBTableViewController.h */,
+				B0D2D798193A93360050EBBA /* VBTableViewController.m */,
 			);
 			path = "psychic-octo-bear";
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 			files = (
 				B0D2D778193A91F90050EBBA /* VBAppDelegate.m in Sources */,
 				B0D2D774193A91F90050EBBA /* main.m in Sources */,
+				B0D2D799193A93360050EBBA /* VBTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
