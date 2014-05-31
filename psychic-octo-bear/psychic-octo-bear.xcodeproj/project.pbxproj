@@ -21,6 +21,8 @@
 		B0D2D78D193A91FA0050EBBA /* psychic_octo_bearTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2D78C193A91FA0050EBBA /* psychic_octo_bearTests.m */; };
 		B0D2D799193A93360050EBBA /* VBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2D798193A93360050EBBA /* VBTableViewController.m */; };
 		B0D2D79B193A94900050EBBA /* sisters.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0D2D79A193A94900050EBBA /* sisters.plist */; };
+		B0D2D79F193A95400050EBBA /* VBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2D79D193A95400050EBBA /* VBTableViewCell.m */; };
+		B0D2D7A0193A95400050EBBA /* VBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D2D79E193A95400050EBBA /* VBTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		B0D2D797193A93360050EBBA /* VBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTableViewController.h; sourceTree = "<group>"; };
 		B0D2D798193A93360050EBBA /* VBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTableViewController.m; sourceTree = "<group>"; };
 		B0D2D79A193A94900050EBBA /* sisters.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sisters.plist; sourceTree = "<group>"; };
+		B0D2D79C193A95400050EBBA /* VBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTableViewCell.h; sourceTree = "<group>"; };
+		B0D2D79D193A95400050EBBA /* VBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTableViewCell.m; sourceTree = "<group>"; };
+		B0D2D79E193A95400050EBBA /* VBTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VBTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +124,9 @@
 				B0D2D76E193A91F90050EBBA /* Supporting Files */,
 				B0D2D797193A93360050EBBA /* VBTableViewController.h */,
 				B0D2D798193A93360050EBBA /* VBTableViewController.m */,
+				B0D2D79C193A95400050EBBA /* VBTableViewCell.h */,
+				B0D2D79D193A95400050EBBA /* VBTableViewCell.m */,
+				B0D2D79E193A95400050EBBA /* VBTableViewCell.xib */,
 			);
 			path = "psychic-octo-bear";
 			sourceTree = "<group>";
@@ -231,6 +239,7 @@
 				B0D2D772193A91F90050EBBA /* InfoPlist.strings in Resources */,
 				B0D2D77A193A91F90050EBBA /* Images.xcassets in Resources */,
 				B0D2D79B193A94900050EBBA /* sisters.plist in Resources */,
+				B0D2D7A0193A95400050EBBA /* VBTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +261,7 @@
 				B0D2D778193A91F90050EBBA /* VBAppDelegate.m in Sources */,
 				B0D2D774193A91F90050EBBA /* main.m in Sources */,
 				B0D2D799193A93360050EBBA /* VBTableViewController.m in Sources */,
+				B0D2D79F193A95400050EBBA /* VBTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +458,7 @@
 				B0D2D792193A91FA0050EBBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0D2D793193A91FA0050EBBA /* Build configuration list for PBXNativeTarget "psychic-octo-bearTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +467,7 @@
 				B0D2D795193A91FA0050EBBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
