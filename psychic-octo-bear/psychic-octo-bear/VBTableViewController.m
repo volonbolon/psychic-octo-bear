@@ -9,7 +9,7 @@
 #import "VBTableViewController.h"
 
 @interface VBTableViewController ()
-
+@property (strong) NSArray *lines;
 @end
 
 @implementation VBTableViewController

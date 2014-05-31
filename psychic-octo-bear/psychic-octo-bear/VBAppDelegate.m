@@ -7,13 +7,17 @@
 //
 
 #import "VBAppDelegate.h"
+#import "VBTableViewController.h"
 
 @implementation VBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    VBTableViewController *rootController = [[VBTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    [[self window] setRootViewController:rootController];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
