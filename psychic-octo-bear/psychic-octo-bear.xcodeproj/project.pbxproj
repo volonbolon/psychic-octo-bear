@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0D2D768193A91F90050EBBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D2D767193A91F90050EBBA /* Foundation.framework */; };
+		B0D2D76A193A91F90050EBBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D2D769193A91F90050EBBA /* CoreGraphics.framework */; };
+		B0D2D76C193A91F90050EBBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D2D76B193A91F90050EBBA /* UIKit.framework */; };
+		B0D2D772193A91F90050EBBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0D2D770193A91F90050EBBA /* InfoPlist.strings */; };
+		B0D2D774193A91F90050EBBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2D773193A91F90050EBBA /* main.m */; };
+		B0D2D778193A91F90050EBBA /* VBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2D777193A91F90050EBBA /* VBAppDelegate.m */; };
+		B0D2D77A193A91F90050EBBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0D2D779193A91F90050EBBA /* Images.xcassets */; };
+		B0D2D781193A91FA0050EBBA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D2D780193A91FA0050EBBA /* XCTest.framework */; };
+		B0D2D782193A91FA0050EBBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D2D767193A91F90050EBBA /* Foundation.framework */; };
+		B0D2D783193A91FA0050EBBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D2D76B193A91F90050EBBA /* UIKit.framework */; };
+		B0D2D78B193A91FA0050EBBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0D2D789193A91FA0050EBBA /* InfoPlist.strings */; };
+		B0D2D78D193A91FA0050EBBA /* psychic_octo_bearTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2D78C193A91FA0050EBBA /* psychic_octo_bearTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0D2D784193A91FA0050EBBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0D2D75C193A91F90050EBBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0D2D763193A91F90050EBBA;
+			remoteInfo = "psychic-octo-bear";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B0D2D764193A91F90050EBBA /* psychic-octo-bear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "psychic-octo-bear.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0D2D767193A91F90050EBBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B0D2D769193A91F90050EBBA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B0D2D76B193A91F90050EBBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B0D2D76F193A91F90050EBBA /* psychic-octo-bear-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "psychic-octo-bear-Info.plist"; sourceTree = "<group>"; };
+		B0D2D771193A91F90050EBBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B0D2D773193A91F90050EBBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0D2D775193A91F90050EBBA /* psychic-octo-bear-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "psychic-octo-bear-Prefix.pch"; sourceTree = "<group>"; };
+		B0D2D776193A91F90050EBBA /* VBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBAppDelegate.h; sourceTree = "<group>"; };
+		B0D2D777193A91F90050EBBA /* VBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBAppDelegate.m; sourceTree = "<group>"; };
+		B0D2D779193A91F90050EBBA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B0D2D77F193A91FA0050EBBA /* psychic-octo-bearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "psychic-octo-bearTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0D2D780193A91FA0050EBBA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B0D2D788193A91FA0050EBBA /* psychic-octo-bearTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "psychic-octo-bearTests-Info.plist"; sourceTree = "<group>"; };
+		B0D2D78A193A91FA0050EBBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B0D2D78C193A91FA0050EBBA /* psychic_octo_bearTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = psychic_octo_bearTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0D2D761193A91F90050EBBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0D2D76A193A91F90050EBBA /* CoreGraphics.framework in Frameworks */,
+				B0D2D76C193A91F90050EBBA /* UIKit.framework in Frameworks */,
+				B0D2D768193A91F90050EBBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0D2D77C193A91FA0050EBBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0D2D781193A91FA0050EBBA /* XCTest.framework in Frameworks */,
+				B0D2D783193A91FA0050EBBA /* UIKit.framework in Frameworks */,
+				B0D2D782193A91FA0050EBBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0D2D75B193A91F90050EBBA = {
+			isa = PBXGroup;
+			children = (
+				B0D2D76D193A91F90050EBBA /* psychic-octo-bear */,
+				B0D2D786193A91FA0050EBBA /* psychic-octo-bearTests */,
+				B0D2D766193A91F90050EBBA /* Frameworks */,
+				B0D2D765193A91F90050EBBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0D2D765193A91F90050EBBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0D2D764193A91F90050EBBA /* psychic-octo-bear.app */,
+				B0D2D77F193A91FA0050EBBA /* psychic-octo-bearTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0D2D766193A91F90050EBBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0D2D767193A91F90050EBBA /* Foundation.framework */,
+				B0D2D769193A91F90050EBBA /* CoreGraphics.framework */,
+				B0D2D76B193A91F90050EBBA /* UIKit.framework */,
+				B0D2D780193A91FA0050EBBA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0D2D76D193A91F90050EBBA /* psychic-octo-bear */ = {
+			isa = PBXGroup;
+			children = (
+				B0D2D776193A91F90050EBBA /* VBAppDelegate.h */,
+				B0D2D777193A91F90050EBBA /* VBAppDelegate.m */,
+				B0D2D779193A91F90050EBBA /* Images.xcassets */,
+				B0D2D76E193A91F90050EBBA /* Supporting Files */,
+			);
+			path = "psychic-octo-bear";
+			sourceTree = "<group>";
+		};
+		B0D2D76E193A91F90050EBBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0D2D76F193A91F90050EBBA /* psychic-octo-bear-Info.plist */,
+				B0D2D770193A91F90050EBBA /* InfoPlist.strings */,
+				B0D2D773193A91F90050EBBA /* main.m */,
+				B0D2D775193A91F90050EBBA /* psychic-octo-bear-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0D2D786193A91FA0050EBBA /* psychic-octo-bearTests */ = {
+			isa = PBXGroup;
+			children = (
+				B0D2D78C193A91FA0050EBBA /* psychic_octo_bearTests.m */,
+				B0D2D787193A91FA0050EBBA /* Supporting Files */,
+			);
+			path = "psychic-octo-bearTests";
+			sourceTree = "<group>";
+		};
+		B0D2D787193A91FA0050EBBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0D2D788193A91FA0050EBBA /* psychic-octo-bearTests-Info.plist */,
+				B0D2D789193A91FA0050EBBA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0D2D763193A91F90050EBBA /* psychic-octo-bear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0D2D790193A91FA0050EBBA /* Build configuration list for PBXNativeTarget "psychic-octo-bear" */;
+			buildPhases = (
+				B0D2D760193A91F90050EBBA /* Sources */,
+				B0D2D761193A91F90050EBBA /* Frameworks */,
+				B0D2D762193A91F90050EBBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "psychic-octo-bear";
+			productName = "psychic-octo-bear";
+			productReference = B0D2D764193A91F90050EBBA /* psychic-octo-bear.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0D2D77E193A91FA0050EBBA /* psychic-octo-bearTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0D2D793193A91FA0050EBBA /* Build configuration list for PBXNativeTarget "psychic-octo-bearTests" */;
+			buildPhases = (
+				B0D2D77B193A91FA0050EBBA /* Sources */,
+				B0D2D77C193A91FA0050EBBA /* Frameworks */,
+				B0D2D77D193A91FA0050EBBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0D2D785193A91FA0050EBBA /* PBXTargetDependency */,
+			);
+			name = "psychic-octo-bearTests";
+			productName = "psychic-octo-bearTests";
+			productReference = B0D2D77F193A91FA0050EBBA /* psychic-octo-bearTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0D2D75C193A91F90050EBBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Ariel Rodriguez";
+				TargetAttributes = {
+					B0D2D77E193A91FA0050EBBA = {
+						TestTargetID = B0D2D763193A91F90050EBBA;
+					};
+				};
+			};
+			buildConfigurationList = B0D2D75F193A91F90050EBBA /* Build configuration list for PBXProject "psychic-octo-bear" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B0D2D75B193A91F90050EBBA;
+			productRefGroup = B0D2D765193A91F90050EBBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0D2D763193A91F90050EBBA /* psychic-octo-bear */,
+				B0D2D77E193A91FA0050EBBA /* psychic-octo-bearTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0D2D762193A91F90050EBBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0D2D772193A91F90050EBBA /* InfoPlist.strings in Resources */,
+				B0D2D77A193A91F90050EBBA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0D2D77D193A91FA0050EBBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0D2D78B193A91FA0050EBBA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0D2D760193A91F90050EBBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0D2D778193A91F90050EBBA /* VBAppDelegate.m in Sources */,
+				B0D2D774193A91F90050EBBA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0D2D77B193A91FA0050EBBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0D2D78D193A91FA0050EBBA /* psychic_octo_bearTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0D2D785193A91FA0050EBBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0D2D763193A91F90050EBBA /* psychic-octo-bear */;
+			targetProxy = B0D2D784193A91FA0050EBBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B0D2D770193A91F90050EBBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0D2D771193A91F90050EBBA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B0D2D789193A91FA0050EBBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0D2D78A193A91FA0050EBBA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0D2D78E193A91FA0050EBBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B0D2D78F193A91FA0050EBBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0D2D791193A91FA0050EBBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "psychic-octo-bear/psychic-octo-bear-Prefix.pch";
+				INFOPLIST_FILE = "psychic-octo-bear/psychic-octo-bear-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B0D2D792193A91FA0050EBBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "psychic-octo-bear/psychic-octo-bear-Prefix.pch";
+				INFOPLIST_FILE = "psychic-octo-bear/psychic-octo-bear-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B0D2D794193A91FA0050EBBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/psychic-octo-bear.app/psychic-octo-bear";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "psychic-octo-bear/psychic-octo-bear-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "psychic-octo-bearTests/psychic-octo-bearTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B0D2D795193A91FA0050EBBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/psychic-octo-bear.app/psychic-octo-bear";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "psychic-octo-bear/psychic-octo-bear-Prefix.pch";
+				INFOPLIST_FILE = "psychic-octo-bearTests/psychic-octo-bearTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0D2D75F193A91F90050EBBA /* Build configuration list for PBXProject "psychic-octo-bear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0D2D78E193A91FA0050EBBA /* Debug */,
+				B0D2D78F193A91FA0050EBBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0D2D790193A91FA0050EBBA /* Build configuration list for PBXNativeTarget "psychic-octo-bear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0D2D791193A91FA0050EBBA /* Debug */,
+				B0D2D792193A91FA0050EBBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B0D2D793193A91FA0050EBBA /* Build configuration list for PBXNativeTarget "psychic-octo-bearTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0D2D794193A91FA0050EBBA /* Debug */,
+				B0D2D795193A91FA0050EBBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0D2D75C193A91F90050EBBA /* Project object */;
+}
