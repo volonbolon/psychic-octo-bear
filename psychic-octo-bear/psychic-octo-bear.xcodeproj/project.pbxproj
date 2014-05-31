@@ -21,6 +21,7 @@
 		B0E4AA0219398126007B4CFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0E4AA0019398126007B4CFB /* InfoPlist.strings */; };
 		B0E4AA0419398126007B4CFB /* psychic_octo_bearTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E4AA0319398126007B4CFB /* psychic_octo_bearTests.m */; };
 		B0E4AA13193981C9007B4CFB /* VBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E4AA12193981C9007B4CFB /* VBTableViewController.m */; };
+		B0E4AA1519398DC7007B4CFB /* sisters.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0E4AA1419398DC7007B4CFB /* sisters.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B0E4AA0319398126007B4CFB /* psychic_octo_bearTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = psychic_octo_bearTests.m; sourceTree = "<group>"; };
 		B0E4AA11193981C9007B4CFB /* VBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTableViewController.h; sourceTree = "<group>"; };
 		B0E4AA12193981C9007B4CFB /* VBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTableViewController.m; sourceTree = "<group>"; };
+		B0E4AA1419398DC7007B4CFB /* sisters.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sisters.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		B0E4A9DE19398125007B4CFB /* psychic-octo-bear */ = {
 			isa = PBXGroup;
 			children = (
+				B0E4AA1419398DC7007B4CFB /* sisters.plist */,
 				B0E4A9E719398125007B4CFB /* VBAppDelegate.h */,
 				B0E4A9E819398125007B4CFB /* VBAppDelegate.m */,
 				B0E4A9EA19398125007B4CFB /* Main.storyboard */,
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0E4AA1519398DC7007B4CFB /* sisters.plist in Resources */,
 				B0E4A9F119398125007B4CFB /* Images.xcassets in Resources */,
 				B0E4A9E319398125007B4CFB /* InfoPlist.strings in Resources */,
 				B0E4A9EC19398125007B4CFB /* Main.storyboard in Resources */,
