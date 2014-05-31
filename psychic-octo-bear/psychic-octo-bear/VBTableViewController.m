@@ -7,6 +7,9 @@
 //
 
 #import "VBTableViewController.h"
+#import "VBTableViewCell.h"
+
+NSString *const kVBTableViewCellIdentifier = @"VBTableViewCell";
 
 @interface VBTableViewController ()
 @property (strong) NSArray *lines;
@@ -57,16 +60,19 @@
     
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kVBTableViewCellIdentifier
+                                                            forIndexPath:indexPath];
     
-    // Configure the cell...
+    NSString *line = [[self lines] objectAtIndex:[indexPath row]];
+    
+    [[(VBTableViewCell *)cell joyceLabel] setText:line];
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

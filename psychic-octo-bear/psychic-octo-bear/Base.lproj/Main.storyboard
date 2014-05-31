@@ -13,13 +13,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="6um-k9-jnF">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VBTableViewCell" id="6um-k9-jnF" customClass="VBTableViewCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6um-k9-jnF" id="gB2-tW-bLA">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRt-Ub-owA">
+                                            <rect key="frame" x="20" y="10" width="280" height="23"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="xRt-Ub-owA" secondAttribute="bottom" constant="10" id="Pon-bo-EbM"/>
+                                        <constraint firstItem="xRt-Ub-owA" firstAttribute="leading" secondItem="gB2-tW-bLA" secondAttribute="leading" constant="20" id="TCB-Qx-9ao"/>
+                                        <constraint firstItem="xRt-Ub-owA" firstAttribute="top" secondItem="gB2-tW-bLA" secondAttribute="top" constant="10" id="frM-WI-KSw"/>
+                                        <constraint firstAttribute="trailing" secondItem="xRt-Ub-owA" secondAttribute="trailing" constant="20" id="g88-yH-MXt"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="joyceLabel" destination="xRt-Ub-owA" id="2Tu-r1-oWZ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
