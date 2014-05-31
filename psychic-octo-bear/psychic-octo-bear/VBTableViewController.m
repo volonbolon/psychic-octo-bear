@@ -13,6 +13,7 @@ NSString *const kVBTableViewCellIdentifier = @"VBTableViewCell";
 
 @interface VBTableViewController ()
 @property (strong) NSArray *lines;
+@property (strong) NSMutableDictionary *cache;
 @end
 
 @implementation VBTableViewController
@@ -23,6 +24,8 @@ NSString *const kVBTableViewCellIdentifier = @"VBTableViewCell";
     
     if ( nil != self ) {
 
+        _cache = [NSMutableDictionary dictionary];
+        
         NSURL *url = [[NSBundle mainBundle] URLForResource:@"sisters"
                                              withExtension:@"plist"];
         NSArray *lines = [[NSArray alloc] initWithContentsOfURL:url];
@@ -49,6 +52,51 @@ NSString *const kVBTableViewCellIdentifier = @"VBTableViewCell";
 }
 
 #pragma mark - Table view data source
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    static VBTableViewCell *cell = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        cell = [tableView dequeueReusableCellWithIdentifier:kVBTableViewCellIdentifier];
+    });
+    
+    CGFloat height = CGFLOAT_MAX;
+    NSNumber *cachedHeight = [[self cache] objectForKey:indexPath];
+    
+    if ( nil == cachedHeight ) {
+        
+        NSString *line = [[self lines] objectAtIndex:[indexPath row]];
+        
+        [[cell label] setText:line];
+        
+        [cell layoutIfNeeded];
+        
+        CGSize size = [[cell contentView] systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+        
+        height = size.height;
+        
+        [[self cache] setObject:[NSNumber numberWithFloat:height]
+                         forKey:indexPath];
+        
+    } else {
+        
+        height = [cachedHeight floatValue];
+        
+    }
+    
+    
+    return height + 1.0f;
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    return UITableViewAutomaticDimension;
+    
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {

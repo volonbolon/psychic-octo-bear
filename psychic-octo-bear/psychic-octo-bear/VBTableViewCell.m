@@ -9,10 +9,6 @@
 #import "VBTableViewCell.h"
 #import "NSLayoutConstraint+SelfInstall.h"
 
-@interface VBTableViewCell ()
-@property (getter = areConstraintsSet) BOOL constraintsSet;
-@end
-
 @implementation VBTableViewCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -20,13 +16,12 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     
     if ( nil != self) {
-        
-        _constraintsSet = NO;
     
         UIView *contentView = [self contentView];
         
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
         [label setTranslatesAutoresizingMaskIntoConstraints:NO];
+        [label setNumberOfLines:0];
         [label setBackgroundColor:[UIColor lightGrayColor]];
         
         [contentView addSubview:label];
@@ -67,15 +62,14 @@
                                                                attribute:NSLayoutAttributeBottom
                                                               multiplier:1.0
                                                                 constant:11.0];
-        [lbc vb_install:UILayoutPriorityDefaultHigh];
+        [lbc vb_install:UILayoutPriorityRequired];
         
-        [self setConstraintsSet:YES];
+        [label setPreferredMaxLayoutWidth:280.0f];
         
     }
     
     return self;
 }
-
 
 
 @end
