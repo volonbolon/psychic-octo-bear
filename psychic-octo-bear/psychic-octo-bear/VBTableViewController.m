@@ -17,9 +17,16 @@
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
+    
+    if ( nil != self ) {
+
+        NSURL *url = [[NSBundle mainBundle] URLForResource:@"sisters"
+                                             withExtension:@"plist"];
+        NSArray *lines = [[NSArray alloc] initWithContentsOfURL:url];
+        _lines = lines;
+    
     }
+    
     return self;
 }
 
